@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scrollable Image Page</title>
+<style>
+  /* 네비게이션 바 스타일 */
+  nav {
+    background-color: #333D79;
+    color: #fff;
+    padding: 3px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  .nav-text {
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  /* 이미지 영역 스타일 */
+  .image-container {
+    margin-top: 60px; /* 네비게이션 바의 높이만큼 여백 추가 */
+    overflow-y: auto; /* 세로 스크롤 가능하도록 설정 */
+    text-align: center;
+    transition: opacity 0.5s; /* 투명도 변경에 대한 애니메이션 효과 */
+  }
+
+  /* 이미지 스타일 */
+  .long-image {
+    width: 50%; /* 화면에 꽉 차게 설정 */
+    height: auto; /* 비율 유지 */
+    display: block;
+    margin: 70px auto 0;
+  }
+</style>
+</head>
+<body>
+
+  <nav>
+    <h1 style="margin-left: 20px; cursor: pointer;" onclick="window.location.href='index.html'">주유재의 집들이: Home Sweet Home</h1>
+    <!-- 네비게이션 바 링크 등 추가 -->
+    <div style="margin-right: 20px;">
+  </nav>
+
+<div class="image-container">
+  <img class="long-image" src="home!.png" alt="Long Image">
+</div>
+
+</body>
+</html>

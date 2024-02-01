@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homesweethome</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'Bochan-Serif';
+            src: url(./fonts/Bochan-Serif.woff) format('truetype');  
+        }
+
+        .scrolling-section,
+        .section-two {
+            margin-top: 50px; 
+            margin-bottom: 50px;
+        }
+        .middle-section{
+            margin-top: 80px;
+            margin-bottom: 10px;
+            padding: 70px;
+        }
+          
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #333D79;
+            color: #333;
+            padding-top:80px;
+        }
+
+        /* 고정 헤더 */
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items:last baseline;
+        }
+
+        .title{
+            margin-top: 10px;
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+        
+
+        h1 {
+            color: #333D79;
+            font-size: 2em;
+            line-height: 120%;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 1.25em;
+            line-height: 120%;
+            padding: 3px;
+        }
+
+        p {
+            text-align: center;
+            line-height: 150%;
+        }
+
+        nav ul {
+            list-style: none;
+            margin-top: 10px;
+            display:flex;
+            justify-content: flex-end;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333D79;
+        }
+
+        nav ul li a:hover {
+            color: black;
+            list-style: underline;
+        }
+
+        /* main */
+        main {
+            padding: 20px;
+        }
+
+        /* footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #ffffff;
+            color: #333D79;
+            font-size: 20px;
+        }
+
+        .scrolling-section {
+            height: 60vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding-top: 90px;
+        }
+
+        .scrolling-section h2 {
+            font-size: 3em;
+        }
+
+        .scrolling-section p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        
+        .additional-page {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #f9f9f9;
+            opacity: 0;
+            transform: translateY(-50px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    button {
+    padding: 10px 20px;
+    width: 300px;
+    font-size: 18px;
+    background-color: #ffffff; /* 흰색 배경 */
+    color: #333D79; /* 주황색 글씨 */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #333D79; /* 주황색 배경 */
+    color: #ffffff; /* 흰색 글씨 */
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+    </style>
+</head>
+<body>
+    <header class="sticky">
+        <div class="title">
+        <h1>누구보다 색다른 주유재의 집들이</h1>
+        <h2 style="color:#333D79">Home Sweet Home</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#"> I wanna go home </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="scrolling-section">
+            <div>
+                <h2 style="font-size: 5.5em; font-family: 'Bochan-Serif'">Home Sweet Home</h2>
+                <p> 주유재의 집들이에 오신 것을 환영합니다 ! </p>
+            </div>
+        </section>
+
+        <section id="about" class="middle-section">
+            <h1 style="color: #ffffff; font-family: 'Bochan-Serif'">About</h1></br>
+            <h2 style="font-size: 25px;"> 누구보다 색다른 주유재의 집들이 </h2></br>
+            <p style="color:#ffffff; line-height: 180%; text-align:justify;">
+                안녕하세요? 정유진입니다 ㅎ </br>
+                저는 이벤트를 너무너무 좋아하는 girl인데다가 좀 색다르게 초대해보고 싶어 이렇게 초대장을 날려봅니다. </br>
+                물론, 저는 코딩을 못하는 수준이 아니라 그 이하이기 때문에 웹사이트는 좀 무리가 있었고, 정말 정말 예쁘고 복잡하고 완성도 있는 웹을 만들고 싶었으나 불가했다는 점을 .. 알아주십쇼. </br>
+                이렇게나마 그냥 .. 끄적여보는 것이라는 점 양해 부탁드립니다. </br> </br>
+                하우에버!!! 중요한 것은 제가 당신을 초대했다는 사실이며, 색다르게 해보고자 525% 문과임에도 불구하고 "시도"라도 했다는 점에 의의가 있습니다. </br>
+                초대된 당신에게 축하하다는 메시지를 전하며, 혼자 오시는 것이 아니라면 이 초대장의 답장으로 가능한 날짜와 시간을 기재해야 모두가 합의된 날짜에 공간이 가능한지 살펴볼 수 있다는 점을 명심해주시길 바라겠습니다. </br>
+            </br></br>
+            앗차차! '주유재'에 대한 설명을 드리지 않았네요. <이 부분은 원하시는 분만 읽으시길> </br>
+            때는 바야흐로 제가 어떠한 SNS 계정 이름을 추천받는 중 .. </br>
+            초대된 당신 정도면 알고 있겠지만 음식에 욕심이 없는 저에게 붙는 별명 겸 연예인이 딱 두 명이었는데요,
+            바로 코드쿤스트(이하 코쿤)과 주우재였습니다.</br> 나름 코쿤 운운하며 살았는데 .. 코쿤의 벌크업 + 주우재의 음식을 향한 공허한 눈동자가 제가 과제하거나 루키를 하거나 음식을 먹을 때 닮았다는 이유로 흑흑흑 </br>
+            주우재가 최근 별명으로 급부상하면서 .. 주우재 + 유진 = 주유재가 되었답니다 </br>
+            이상 TMI였습니다 >.< 안내 끝까지 읽고 오시길 
+
+            </p>
+            <div style="text-align: center; margin-top: 50px;">
+                <button onclick="window.location.href='ididit.html'" style="padding: 10px 20px; font-size: 18px; background-color: #ffffff; color: #333D79; border-radius: 5px; cursor: pointer;"> 집들이 안내 보러가기 6v6</button>
+            </div>
+            
+
+
+    </main>
+
+    <footer>
+        <p>&copy; homesweethome_genie</p>
+    </footer>
+
+
+    <script>
+        // About 링크에 클릭 이벤트 추가
+        document.querySelector('nav ul li:nth-child(2) a').addEventListener('click', function(event) {
+            event.preventDefault(); // 링크의 기본 동작 중단
+            const aboutSection = document.getElementById('about'); // About 섹션 요소 가져오기
+            aboutSection.scrollIntoView({ behavior: 'smooth' }); // About 섹션으로 스크롤 이동
+        });
+    </script>
+</html>
+
